@@ -48,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "daisyui": "^4.7.2",
     "eslint-config-react-app": "^7.0.1",
     "tailwind-scrollbar": "^3.1.0",
