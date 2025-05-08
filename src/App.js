@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
 import { useEffect, useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
@@ -51,7 +51,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
         <Routes>
           {!getToken ? (
             <>
@@ -86,7 +86,7 @@ function App() {
           )}
           <Route path="*" element={<ErrorPage />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
       <Toaster position="top-center" />
     </div>
   );
